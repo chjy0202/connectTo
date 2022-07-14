@@ -274,13 +274,13 @@ body{
   border-bottom: 1px solid #aaa;
 }
 
-.user-email{
+.user-email, .user-password{
   margin-bottom: 5px;
 }
 
 .login-form label{
   width: 56px;
-  display: block;
+  display: inline-block;
 }
 
 .login-form input{
@@ -306,6 +306,7 @@ body{
 }
 
 .sign{
+  display: flex;
   background: #fff;
   padding: 4px 10px;
   padding: 0 10px 10px 10px;
