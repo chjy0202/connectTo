@@ -277,9 +277,6 @@ body{
 .user-email{
   margin-bottom: 5px;
 }
-.user-pwd{
-
-}
 
 .login-form label{
   width: 56px;
@@ -331,6 +328,26 @@ body{
 
 .sign .icon-right-open::before{
   color: #ed552f;
+}
+
+/* 배너 */
+.banner{
+  padding: 8px 0;
+}
+.banner li{
+  margin: 2px 0;
+}
+.banner a{
+  padding: 5px;
+  height: 20px;
+  width: 250px;
+  background: rgb(160, 160, 160) radial-gradient(rgb(160, 160, 160), rgb(190, 190, 190));
+  border-radius: 10px;
+}
+.banner a::before{
+  content: "";
+  background-image: url(./images/validation_icon.png);
+  margin: 0 3px;
 }
 
 /* 슬로건 */
