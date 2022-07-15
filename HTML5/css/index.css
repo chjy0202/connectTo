@@ -456,13 +456,14 @@ body{
 /* 공지사항 및 자료실 */
 .board{
   margin-top: 20px;
-  background: yellow;
   position: relative;
+  padding-top: 45px;
   min-height: 214px;
 }
 
 .board-tab{
-  float: left;
+  position: absolute;
+  top: 0;
   border: 1px solid #aaa;
   border-radius: 5px 5px 0 0;
   background: #ccc;
@@ -470,7 +471,15 @@ body{
   color: #666;
 }
 
+.notice-tab{
+  left: 0;
+}
+.archive-tab{
+  left: 76px;
+}
+
 .board-section.is-select .board-tab{
+  z-index: 10px;
   background: #fff;
   color: #ed552f;
   /* 글자 색만 바꾸면 보더 색깔 까지 모두 바뀐다. */
@@ -480,11 +489,12 @@ body{
 
 .board-panel{
   display: none;
-  position: absolute;
-
-  top: 45px;
+  /* position: absolute; */
+  /* position: relative; */
+  /* top: 45px;
   left: 0;
-  width: 100%;
+  width: 100%; */
+  
 }
 .board-section.is-select .board-panel{
   display: flex;
@@ -497,6 +507,7 @@ body{
   flex-flow: row nowrap;
   width: 100%;
   align-items: center;
+  bottom: 0px;
 }
 
 .board-panel a{
@@ -512,8 +523,9 @@ body{
 .board-more{
   display: none;
   position: absolute;
-  top: -8px;
-  right: -8px;
+  /* position: relative; */
+  top: 0;
+  right: 0;
   padding: 8px;
 }
 
