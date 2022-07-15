@@ -413,6 +413,19 @@ body{
   float: right;
 }
 
+/* 검색 폼 */
+.search-form{
+  background: #ff0;
+  padding: 15px;
+  border: 1px solid #181818;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 0;
+}
+
+.icon-search{
+  margin-right: 10px;
+}
+
 /* 슬로건 */
 .slogan{
   background: lime;
