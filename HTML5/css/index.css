@@ -599,6 +599,54 @@ body{
 .news-more::before{
 }
 
+/* 이벤트 */
+.gradient-effect{
+  position: relative;
+  background: #ccc linear-gradient(to bottom, #ccc, rgb(231, 230, 230));
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.event-title{
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.accent-color{
+  color: #d16527;
+}
+
+.event-button-wrapper{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(./images/back_forward.png);
+  /* background-repeat: no-repeat; */
+  background-position: ;
+}
+
+.event-thumbnail{
+  margin-bottom: 10px;
+  box-shadow: 5px 5px  #aaa;
+}
+
+.event-breif{
+  font-size: 600;
+}
+.event::after{
+  content: "";
+  position: absolute;
+  margin: 10px;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  background-color: #aaa;
+}
+.related{
+  margin-top: 20px;
+}
+
 
 
 /* 슬로건 */
@@ -613,3 +661,5 @@ body{
 .footer-inner{
   background: coral;
 }
+
+
