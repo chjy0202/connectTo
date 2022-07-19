@@ -614,7 +614,8 @@ body{
   border-bottom: 1px solid #aaa;
 }
 
-.event-title{
+.event-title, 
+.related-title{
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -687,33 +688,39 @@ body{
   color: #d16527;
 } 
 
-.related-title{
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 10px 0;
+/* 관련사이트 */
+.related{
+  padding-top: 10px;
 }
 
 .related-list{
-  height: 27px;
-  border: 1px solid #aaa;
+  margin-top: 10px;
   background: #fff;
+  border: 1px solid #aaa;
   border-radius: 5px;
+  height: 27px;
   overflow: hidden;
+  transition: height 400ms, padding-top 400ms, padding-bottom 400ms;
+  /* transition: height 400ms, padding 400ms; */
+
 }
 
 .related-list:hover, .related-list:focus{
   height: 147px;
-  width: 100%;
-  display: inline-block;
   padding: 10px 0;
 }
+/* 
+이렇게 액티스 안에 스크립트로 처리되는 요소와 함께 주면 효과가 안난다.
+.related-list.is-active{
+  height: 147px;
+  padding: 10px 0;
+} */
 
-.related-list li{
-  height: 25px;
-  padding-left: 20px;
-  justify-content: center;
+.related-list a{
+  display: block;
+  line-height: 25px;
+  padding: 0 0 0 20px;
 }
-
 
 
 /* 슬로건 */
