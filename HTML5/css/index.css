@@ -610,25 +610,23 @@ body{
 .event{
   display: flex;
   flex-flow: row wrap;
-  border-bottom: 1px solid #ccc;
+  align-items: flex-start;
+  border-bottom: 1px solid #aaa;
 }
 
 .event-title{
   font-size: 1.5rem;
   font-weight: 700;
 }
-
+/*
 .event-button-wrapper{
-  /* width: 40px;
-  height: 20px; 
-  overflow: hidden; */
   margin-left: auto;
   height: 18px;
   overflow: hidden;
   display: flex;
   gap: 6px;
 }
-/* 
+
 .event button{
   width: 19px;
   height: 0 !important;
@@ -649,7 +647,6 @@ body{
 
 .event-button-container{
   padding: 4px;
-  /* background: yellow; */
   margin-left: auto;
   display: flex;
   flex-flow: row nowrap;
@@ -681,20 +678,14 @@ body{
   margin: 10px 0;
 }
 
-
 .event-thumbnail img{
-  border: 1px solid #ccc;
-  box-shadow: 5px 5px 0 0 #ccc;
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #bbb;
 }
+
 .accent-color{
   color: #d16527;
 } 
-
-
-
-
-
-
 
 
 /* 슬로건 */
