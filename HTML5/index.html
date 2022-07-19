@@ -262,13 +262,12 @@
         </section>
       </div> -->
 
+      <!-- 게시판2 -->
       <div class="board">
-        <div role="tablist" class="tab-list">
-          <button type="button" role="tab" class="tab" aria-selected="true" id="buttoNotice" aria-controls="panelNotice">공지사항</button>
-          <button type="button" role="tab" class="tab" aria-selected="false" id="buttonArchive" aria-controls="panelArchive">게시판</button>
-        </div>
-        <div role="tabpanel" class="tab-panel is-active" id="panelNotice" aria-labelledby="buttonNotice">
-          <ul class="notice-list board-list">
+        <section class="notice board-section is-select">
+          <h2 class="sr-only notice-title" id="noticeTitle">공지사항</h2>
+          <button type="button" class="board-tab notice-tab">공지사항</button>
+          <ul class="notice-list board-panel">
             <li>
               <a class="icon-dot-circled" href="/">HTML의 모든 것을 알려주마 샘플 활용법</a>
               <time datetime="2021-08-12T13:53:45">2021.08.12</time>
@@ -290,10 +289,12 @@
               <time datetime="2021-08-12T13:53:45">2021.08.12</time>
             </li>
           </ul>
-          <a href="/" class="icon-plus more board-more" title="공지사항">더보기</a>
-        </div>
-        <div role="tabpanel" class="tab-panel" id="panelArchive" aria-labelledby="buttonArchive">
-          <ul class="archive-list board-list">
+          <a href="/" class="icon-plus more board-more" title="공지사항" aria-labelledby="noticeTitle">더보기</a>
+        </section>
+        <section class="archive board-section">
+          <h2 class="sr-only archive-title" id="archiveTitle">자료실</h2>
+          <button type="button" class="board-tab archive-tab">자료실</button>
+          <ul class="archive-list board-panel">
             <li>
               <a class="icon-dot-circled" href="/">디자인 사이트 링크 모음</a>
               <time datetime="2021-08-12T13:53:45">2021.08.12</time>
@@ -315,8 +316,8 @@
               <time datetime="2021-08-12T13:53:45">2021.08.12</time>
             </li>    
           </ul>
-          <a href="/" class="icon-plus more board-more" title="자료실">더보기</a>
-        </div>
+          <a href="/" class="icon-plus more board-more" title="자료실" aria-labelledby="archiveTitle">더보기</a>
+        </section>
       </div>
 
       <section class="news">

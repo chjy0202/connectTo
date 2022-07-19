@@ -479,7 +479,7 @@ body{
 }
 
 .board-section.is-select .board-tab{
-  z-index: 10px;
+  z-index: 10;
   background: #fff;
   color: #ed552f;
   border-color: currentColor currentColor #fff currentColor;
