@@ -616,7 +616,7 @@ body{
 
 .event-title, 
 .related-title,
-sdf{
+.favorite-title{
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -727,52 +727,62 @@ sdf{
 /* 인기사이트 */
 .favorite{
   position: relative;
+  margin-top: 20px;
 }
 
 .favorite-list{
   margin-top: 10px;
-  background: yellow;
   list-style-type: none;
 }
 
 .favorite-list li{
-  background: pink;
+  position: relative;
   margin-top: 8px;
-  line-height: auto;
-  padding: auto 0;
+  counter-increment: number;
 }
+
 .favorite-list li::before{
-  content: "";  
+  content: counter(number);
+  display: inline-flex;
+  padding: 2px 5px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: #aaa;
+  border-radius: 4px;
+  min-width: 1.5em;
+  justify-content: center;
+  margin-right: 0.5em;
+}
+
+.favorite-list a{
+  vertical-align: middle;
 }
 
 .favorite-list em{
-  display: inline-block;
   position: absolute;
-  width: 11px;
+  width: 9px;
   height: 11px;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
   background-image: url(./images/rank.png);
   background-repeat: no-repeat;
-  right:10px;
-  margin: auto;
-}
-
-.favorite-list .down{
-  background-position: 0 -44px;
 }
 
 .favorite-list .stop{
-  background-position: 0 -22px;
+  background-position: 0 50%;
 }
 
+.favorite-list .down{
+  background-position: 0 100%;
+}
 
 .favorite-more{
   position: absolute;
   top: 2px;
   right: 2px;
-  padding: 8px
+  padding: 8px;
 }
-
-
 
 /* 슬로건 */
 .slogan{
