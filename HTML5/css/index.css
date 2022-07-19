@@ -599,53 +599,101 @@ body{
 .news-more::before{
 }
 
-/* 이벤트 */
+/* 신규 이벤트 및 관련 사이트 */
 .gradient-effect{
-  position: relative;
-  background: #ccc linear-gradient(to bottom, #ccc, rgb(231, 230, 230));
+  border: 1px solid #aaa;
+  border-radius: 5px;
   padding: 10px;
-  border-radius: 10px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.event{
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #ccc;
 }
 
 .event-title{
-  font-size: 1.2em;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
-}
-.accent-color{
-  color: #d16527;
 }
 
 .event-button-wrapper{
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  /* width: 40px;
+  height: 20px; 
+  overflow: hidden; */
+  margin-left: auto;
+  height: 18px;
+  overflow: hidden;
+  display: flex;
+  gap: 6px;
+}
+/* 
+.event button{
+  width: 19px;
+  height: 0 !important;
+  border: 0;
+  padding: 18px 0 0 0;
+  background-color: transparent;
   background-image: url(./images/back_forward.png);
-  /* background-repeat: no-repeat; */
-  background-position: ;
+  background-repeat: no-repeat;
+}
+
+.event button:focus{
+  outline-offset: -2px;
+}
+
+.event-button-next{
+  background-position: -36px 0;
+} */
+
+.event-button-container{
+  padding: 4px;
+  /* background: yellow; */
+  margin-left: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 6px;
+  transform: translate(4px, -4px);
+}
+
+.event-button-container button{
+  width: 19px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+}
+
+.event-button-container .event-button-next{
+  background-position: -36px 0;
+}
+.event-detail{
+  width: 100%;
 }
 
 .event-thumbnail{
-  margin-bottom: 10px;
-  box-shadow: 5px 5px  #aaa;
+  margin: 2px 0 10px;
+}
+.event-brief{
+  margin: 10px 0;
 }
 
-.event-breif{
-  font-size: 600;
+
+.event-thumbnail img{
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 0 0 #ccc;
 }
-.event::after{
-  content: "";
-  position: absolute;
-  margin: 10px;
-  left: 0;
-  height: 1px;
-  width: 90%;
-  background-color: #aaa;
-}
-.related{
-  margin-top: 20px;
-}
+.accent-color{
+  color: #d16527;
+} 
+
+
+
+
+
 
 
 
