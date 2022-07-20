@@ -827,7 +827,6 @@ body{
   height: 83px;
   line-height: 83px;
   text-align: center;
-  background: yellow;
 }
 
 .slogan-title::after{
@@ -838,7 +837,6 @@ body{
   top: 0;
   left: 0;
   background: url(./images/coffee.png) no-repeat 0 0;
-  background-color: pink;
 }
 
 .slogan-content{
@@ -861,32 +859,57 @@ body{
 /* 푸터 */
 .footer{
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 60%, #fff 100%);
-  height: 100px;
 }
-/* 푸터이너 */
+/* 풋터이너 */
 .footer-inner{
-  position: relative;
-  margin: 0 auto;
   display: grid;
-  width: 940px;
-  height: 143px;
-  grid-template-columns: 100px 760px 40px 40px;
-  grid-auto-rows: 51px 92px;
-  grid-template-areas:
-    "logo guide img1 img2"
-    "logo address img1 img2";
+  grid-template-columns: 140px 1fr 120px;
+  padding: 20px 0;
 }
 
+/* 풋터로고 */
 .footer-logo{
-  grid-area: logo;
+  grid-area: 1/1/4/2;
+  align-self: center;
+  justify-self: center;
 }
 
+/* 가이드 링크 */
 .guide-list{
-  grid-area: guide;
+  grid-area: 1/2/2/3;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background: #7b8385;
+  color: #fff;
+  border-radius: 20px;
+  padding: 4px 20px;
+  margin: 5px 20px;
+  text-transform: uppercase;
+  /* font-variant: small-caps; */
 }
 
+.guide-list a{
+  display: block;
+  padding: 6px 10px;
+}
+
+
+/* 주소 */
+.address{
+  grid-area: 2/2/3/3;
+  margin: 5px 20px;
+}
+
+/* 저작권 정보 */
+.copyright{
+  grid-area: 3/2/4/3;
+  margin: 5px 20px;
+}
+
+/* 배지그룹 */
+.badge-container{
+  grid-area: 1/3/4/4;
+}
 
 
