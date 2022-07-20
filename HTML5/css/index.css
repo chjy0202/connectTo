@@ -815,16 +815,19 @@ body{
 .slogan{
   position: relative;
   padding: 10px 100px 10px 180px;
+  margin-top: -100px;
 }
 
 .slogan-title{
-  position: absolute;
+  /* position: absolute;
   left: 35px;
-  bottom: -25px;
+  bottom: -25px; */
+  transform: translate(-140px, 90px);
   width: 110px;
   height: 83px;
   line-height: 83px;
   text-align: center;
+  background: yellow;
 }
 
 .slogan-title::after{
@@ -835,6 +838,7 @@ body{
   top: 0;
   left: 0;
   background: url(./images/coffee.png) no-repeat 0 0;
+  background-color: pink;
 }
 
 .slogan-content{
@@ -861,7 +865,28 @@ body{
 }
 /* 푸터이너 */
 .footer-inner{
-  background: coral;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  width: 940px;
+  height: 143px;
+  grid-template-columns: 100px 760px 40px 40px;
+  grid-auto-rows: 51px 92px;
+  grid-template-areas:
+    "logo guide img1 img2"
+    "logo address img1 img2";
 }
+
+.footer-logo{
+  grid-area: logo;
+}
+
+.guide-list{
+  grid-area: guide;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 
 
