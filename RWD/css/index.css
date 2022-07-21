@@ -106,21 +106,25 @@ input[type="search"]{
 }
 
 /* 공통 메인 콘텐츠 세션 제목 */
-.sprite{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  background-image: url(./../images/sprite_main.png);
-  background-repeat: no-repeat;
-  padding-left: 64px;
-  height: 64px;
-  font-size: var(--text-md);
+.appMain [class*="__title"]{
+  margin-bottom: var(--spacing-base);
   font-weight: 700;
+  font-size: var(--text-md);
 }
 
-.sprite span{
-  font-size: var(--text-sm);
+.appMain [class*="__enTitle"]{
   font-weight: 400;
+  font-size: var(--text-base);
+}
+
+.sprite{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 3.75rem;
+  padding-left: 4rem;
+  background-image: url(./../images/sprite_main.png);
+  background-repeat: no-repeat;
 }
 
 .spriteBoard{
@@ -139,7 +143,6 @@ input[type="search"]{
 .accent-book{
   color: var(--accent-book);
 }
-.accent-book
 .accent-news{
   color: var(--accent-news);
 }
