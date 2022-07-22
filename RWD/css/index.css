@@ -211,7 +211,7 @@ input[type="search"]{
   padding-top: 56.25%;
 }
 
-.ifraeWrapper iframe{
+.iframeWrapper iframe{
   position: absolute;
   top: 0;
   left: 0;
@@ -221,6 +221,39 @@ input[type="search"]{
   height: 100%;
 }
 
+/* 공통 게시판 */
+.board{
+  position: relative;
+  margin-top: var(--spacing-md);
+}
+
+.board__list{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-base);
+}
+
+.board__item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.board__more{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* 공통 인기사이트 */
+.favorite{
+  margin-top: var(--spacing-md);
+}
+
+.favorite__list{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-base);
+}
 
  
 /* 모바일 디바이스(mobile device) */
@@ -332,6 +365,21 @@ input[type="search"]{
     gap: 20px;
   }
 
+  /* 모바일 인기사이트 */
+  .favorite__link{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .favorite__link::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    color: var(--accent-favorite);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: auto;
+    margin-left: 10px;
 }
 
 
